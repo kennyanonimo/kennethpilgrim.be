@@ -128,7 +128,7 @@
                 Contact me securely!
             </div>
             <div class="infoBody" id="PGP">
-                <section><!-- TODO: DOESNT WORK IN EDGE??? -->
+                <section><?php /* TODO: DOESNT WORK IN EDGE??? */ ?>
                     <article>
                         <details>
                             <summary>kenneth@kennethpilgrim.eu</summary>

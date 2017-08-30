@@ -1,58 +1,46 @@
-/*****************************************************************************************
- * GENERAL STYLE                                                                         *
- *****************************************************************************************/
-
-
-/* PAGE
- *******/
+/*
+ |------
+ | PAGE
+ |------
+ */
 html {
     height: 100%;
     width: 100%;
 }
 body {
-    background: url(https://images.unsplash.com/photo-1485160497022-3e09382fb310?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
-    background-size: cover;
-    background-position: center;
+    background: $background;
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    font-family: Lato;
+    background-size: cover;
+    font-family: $font;
 }
 
 
 
-/* COLLAPSE NAVBARS SOONER
- **************************/
-@media (min-width: 768px) and (max-width: 800px) {
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-collapse.collapse.in {
-        display: block !important;
-    }
-    .navbar-header .collapse,
-    .navbar-toggle {
-        display:block !important;
-    }
-    .navbar-header {
-        float:none;
-    }
-}
 
+/*
+ |---------------
+ | BROWSER FIXES
+ |---------------
+ */
 
-/* BROWSER FIXES
- ****************/
-/* Remove select box outline in firefox */
+// -- Remove select box outline in firefox -- //
 select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
 }
-/* Remove standard dropdown arrow. TODO: show the right arrow? */
+
+// -- Remove standard dropdown arrow. TODO: show the right arrow -- //
 select {
     -moz-appearance: none;
-    /*text-indent: 0.01px;
-    text-overflow: '';*/
+    /*
+    text-indent: 0.01px;
+    text-overflow: '';
+    */
 }
-/* Set input-placeholder color to textcolor */
+
+// -- Set input-placeholder color to textcolor -- //
 ::-webkit-input-placeholder {
     color: $textColor;
 }
@@ -70,3 +58,4 @@ select {
 ::-ms-input-placeholder {
     color: $textColor;
 }
+

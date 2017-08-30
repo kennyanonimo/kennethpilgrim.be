@@ -1,84 +1,40 @@
-/*****************************************************************************************
- * HOME PAGE STYLE                                                                       *
- *****************************************************************************************/
-
-
-/* CONTENT
- **********/
 #homeMain {
     min-height: 100%;
 }
 #jumboHome {
     background: 0;
     display: table;
-    position: absolute;
     height: 100%;
+    position: absolute;
     width: 100%;
 }
 #homeContent {
-    color: white;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2),
-                 0px 8px 13px rgba(0, 0, 0, 0.1),
-                 0px 18px 23px rgba(0, 0, 0, 0.1);
+    color: $textColor;
     display: table-cell;
+    font-size: 2rem;
+    padding: 0.5%;
+    text-shadow: $textShadow;
     vertical-align: middle;
+}
+#homeContent h1 {
+    font-weight: 700;
+    padding-bottom: 2%;
 }
 #homeText {
     margin-left: auto;
     margin-right: auto; 
-    width: 500px;
     max-width: 100%;
-}
-#homeContent h1,
-#homeContent a,
-#homeContent a:hover,
-#portfolioText {
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-}
-/* Button*/
-#homeContent button {
-    color: white;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2),
-                 0px 8px 13px rgba(0, 0, 0, 0.1),
-                 0px 18px 23px rgba(0, 0, 0, 0.1);
-    background: rgba(146, 85, 53, 0);
-    border: 0;
-    font-size: 2rem;
-    padding: 0;
-    margin-bottom: 6px;
-}
-#homeContent button:hover,
-#homeContent button:focus,
-#homeContent button:active,
-#homeContent button:visited {
-    background: rgba(146, 85, 53, 1);
-    border: 0;
-    padding: 10px;
-    text-transform: capitalize;
-    outline: 0;
-}
-#homeContent #homeText {
-    font-size: 2rem;
-    padding: 0.5%;
-}
-#homeContent #homeText h1 {
-    padding-bottom: 2%;
+    width: 500px;
 }
 
 
-/* SMALLER SCREENS
- ******************/
 @media only screen and (max-width:780px) {
     #homeText {
         margin-top: -55px;
+        width: 100%;
     }
     #jumboHome .break {
         display: none;
-    }
-    #homeText {
-        width: 100%;
     }
 }
 

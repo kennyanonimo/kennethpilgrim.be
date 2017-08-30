@@ -1,6 +1,7 @@
 @extends('index')
 @section('content')
 @if (Auth::guest())
+<h1>How did you get here??</h1>
 @else
 <main id="dashMain" class="container">
     <div class="row">

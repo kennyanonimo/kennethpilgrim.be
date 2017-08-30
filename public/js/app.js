@@ -782,24 +782,30 @@ module.exports = __webpack_require__(43);
 /***/ (function(module, exports, __webpack_require__) {
 
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
+/*
+ |---------------------------------------------------------------------------------------
+ | DEPENDENCIES AND INCLUDES
+ |---------------------------------------------------------------------------------------
+ | First we will load all of this project's JavaScript dependencies which includes Vue
+ | and other libraries.  It is a great starting point when building robust, powerful web
+ | applications using Vue and Laravel.
+ |
  */
-
 __webpack_require__(10);
 __webpack_require__(35);
 __webpack_require__(36);
 
 window.Vue = __webpack_require__(37);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
+/*
+ |---------------------------------------------------------------------------------------
+ | VUE
+ |---------------------------------------------------------------------------------------
+ | Next, we will create a fresh Vue application instance and attach it to the page.
+ | Then, you may begin adding components to this application or customize the JavaScript
+ | scaffolding to fit your unique needs.
+ |
  */
-
 Vue.component('example', __webpack_require__(38));
 
 var app = new Vue({
@@ -810,59 +816,67 @@ var app = new Vue({
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-
 window._ = __webpack_require__(11);
 
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
- * code may be modified to fit the specific needs of your application.
+/*
+ |---------------------------------------------------------------------------------------
+ | JQUERY AND BOOTSTRAP
+ |---------------------------------------------------------------------------------------
+ | We'll load jQuery and the Bootstrap jQuery plugin which provides support for
+ | JavaScript based Bootstrap features such as modals and tabs.  This code may be
+ | modified to fit the specific needs of your application.
+ |
  */
-
 try {
   window.$ = window.jQuery = __webpack_require__(13);
-
   __webpack_require__(14);
 } catch (e) {}
 
-/**
- * We'll load the axios HTTP library which allows us to easily issue requests
- * to our Laravel back-end. This library automatically handles sending the
- * CSRF token as a header based on the value of the "XSRF" token cookie.
+/*
+ |---------------------------------------------------------------------------------------
+ | AXIOS HTTP LIBRARY
+ |---------------------------------------------------------------------------------------
+ | We'll load the axios HTTP library which allows us to easily issue requests to our
+ | Laravel back-end.  This library automatically handles sending the CSRF token as a
+ | header based on the value of the "XSRF" token cookie.
+ |
  */
-
 window.axios = __webpack_require__(15);
-
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-/**
- * Next we will register the CSRF Token as a common header with Axios so that
- * all outgoing HTTP requests automatically have it attached. This is just
- * a simple convenience so we don't have to attach every token manually.
+/*
+ |---------------------------------------------------------------------------------------
+ | REGISTER CSRF TOKEN AS A COMMON HEADER
+ |---------------------------------------------------------------------------------------
+ | Next we will register the CSRF Token as a common header with Axios so that all
+ | outgoing HTTP requests automatically have it attached.  This is just a simple
+ | convenience so we don't have to attach every token manually.
+ |
  */
-
 var token = document.head.querySelector('meta[name="csrf-token"]');
-
 if (token) {
   window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
   console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
-/**
- * Echo exposes an expressive API for subscribing to channels and listening
- * for events that are broadcast by Laravel. Echo and event broadcasting
- * allows your team to easily build robust real-time web applications.
+/*
+ |---------------------------------------------------------------------------------------
+ | LARAVEL ECHO API
+ |---------------------------------------------------------------------------------------
+ | Echo exposes an expressive API for subscribing to channels and listening for events
+ | that are broadcast by Laravel.  Echo and event broadcasting allows your team to easily
+ | build robust real-time web applications.
+ |
  */
-
-// import Echo from 'laravel-echo'
-
-// window.Pusher = require('pusher-js');
-
-// window.Echo = new Echo({
-//     broadcaster: 'pusher',
-//     key: 'your-pusher-key'
-// });
+/*
+import Echo from 'laravel-echo'
+window.Pusher = require('pusher-js');
+window.Echo = new Echo({
+    broadcaster: 'pusher',
+    key: 'your-pusher-key'
+});
+*/
 
 /***/ }),
 /* 11 */
@@ -31697,27 +31711,33 @@ module.exports = function spread(callback) {
 
 $(document).ready(function () {
 
-	/*************************************************************************************
-  * FILTER BUTTONS                                                                    *
-  *************************************************************************************/
+	/*
+  |------------------------------------------------------------------------------------
+  | FILTER BUTTONS
+  -------------------------------------------------------------------------------------
+  */
 
-	/* Hide all items */
-	$('.filter').hide();
+	// Hide all items
+	$('.filter').hide('0');
 
-	/* Button clicked: show items with category */
+	// Button clicked: show items with category
 	$(".filter-button").click(function () {
 
-		/* Get data-filter category of button */
+		// Get data-filter category of button
 		var value = $(this).attr('data-filter');
 
-		/* FOR ALL BUTTON: if (value == "all") { $('.filter').show('1000'); } else { */
+		/*
+  FOR ALL BUTTON: 
+  if (value == "all") { $('.filter').show('1000'); } else {
+  */
 
-		/* Hide all other categories */
+		// Hide all other categories
 		$(".filter").not('.' + value).hide('0');
-		/* Show items with chosen category */
-		$('.filter').filter('.' + value).show('4000');
 
-		/* Color the selected button by adding a class */
+		// Show items with chosen category
+		$('.filter').filter('.' + value).show('0'); //4000
+
+		// Color the selected button by adding a class
 		$('button').removeClass('selected');
 		$(this).addClass('selected');
 	});
@@ -31729,12 +31749,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-	/*************************************************************************************
-  * CONTACT FORM                                                                      *
-  *************************************************************************************/
+	/*
+  |------------------------------------------------------------------------------------
+  | CONTACT FORM
+  |------------------------------------------------------------------------------------
+  */
 
-	/* AUTO-SIZE COMMENT BOX
-  ************************/
+	// AUTO-SIZE COMMENT BOX
 	$('textarea').each(function () {
 		this.setAttribute('style', 'height:' + this.scrollHeight + 'px;overflow-y:hidden;');
 	}).on('input', function () {

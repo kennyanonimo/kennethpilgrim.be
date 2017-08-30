@@ -240,21 +240,25 @@ class RedirectController extends Controller {
         );
     }
 
-protected function values($tag) {
+
+
+
+    
+    protected function values($tag) {
     $value = DB::table('seo')->select('value')->where('tag',$tag)->first();
     return $value->value;
-}
-protected function socialLinks() {
+    }
+    protected function socialLinks() {
     $list = DB::table('sociallinks')->get();
     return $list;
-}
-protected function skillLists($skill) {
+    }
+    protected function skillLists($skill) {
     $list = DB::table('skills')->where('group',$skill)->get();
     return $list;
-}
-protected function commentList() {
+    }
+    protected function commentList() {
     $list = DB::table('comments')->get();
     return $list;
-}
+    }
     
 }

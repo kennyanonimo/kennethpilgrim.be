@@ -1,80 +1,71 @@
-/* FOOTER
- *********/
 #kpFooter * {
     border: 0;
     box-shadow: unset;
 }
 #kpFooter .container-fullwidth {
-    margin: 0 80px;
-}
-@media only screen and (max-width:767px) {
-    #kpFooter #contactHours,
-    #kpFooter #copyright {
-       margin-top: 20px;
-    }
-}
-@media only screen and (min-width:768px) {
-    #kpFooter #kpFooterContainer .col-sm-4 {
-        width: 30.33333333%;
-    }
-}
-@media only screen and (max-width:780px) {
-    #kpFooter .container-fullwidth {
-        margin: 0 70px 0 10px;
-    }
+    margin: $footerMargin;
 }
 #kpFooter .navbar-inverse .navbar-collapse {
-    background: rgba(255, 255, 255, 1);
-    border-radius: 25px;
+    background: $darkBackgroundDark;
+    border-radius: $footerBorderRadius;
     overflow-x: hidden;
-    max-height: 100%;
-    padding: 10px;
     margin: 0;
+    max-height: 100%;
+    padding: $footerPadding;
 }
 #kpFooter {
-    color: rgba(220, 150, 100, 1);
-    text-shadow: 0px 4px 3px rgba(255, 190, 140, 0.1),
-                 0px 8px 13px rgba(255, 190, 140, 0.05),
-                 0px 18px 23px rgba(255, 190, 140, 0.05);
+    color: $textColor;
+    text-shadow: $textShadow;
 }
 #kpFooter a {
-    color: rgba(220, 150, 100, 1);
+    color: $textColor;
 }
 #kpFooter a:hover,
 #kpFooter a:focus {
-    color: rgba(140, 60, 25, 1);
+    color: $linkHoverColor;
     text-decoration: none;
 }
 #kpFooter .row {
-    padding-bottom: 10px;
+    padding-bottom: $footerPadding;
 }
 #kpFooter .navbar {
     background: 0;
     border: 0;
 }
 #kpFooter .icon-bar {
-    background: white;
+    background: $textColor;
 }
 #kpFooter button {
-    background: rgba(206, 105, 73, 1);
-    position: fixed;
-    right: 0;
-    bottom: 0;
+    background: $buttonColor;
     border: 0;
+    bottom: $buttonPositionNum;
+    position: $buttonPosition;
+    right: $buttonPositionNum;
 }
 #kpFooter button>i {
-    margin: 10px;
-    color: white;
+    color: $textColor;
+    padding: $buttonMargin;
+    padding-left: $smallButtonPadding;
+    padding-right: $smallButtonPadding;
 }
 #kpFooter button:focus,
 #kpFooter button:hover {
-    background: rgba(186, 85, 53, 0.5);
+    background: $linkHoverColor;
 }
 #kpFooter td {
     border: 0;
-    padding-bottom: 3px;
-    padding-right: 10px;
+    padding-bottom: $tdSpacing;
+    padding-right: $footerPadding;
 }
+
+
+
+
+/*
+ |---------------------------------
+ | Keep footer collapsed to button
+ |---------------------------------
+ */
 @media only screen and (max-width: 2000px) {
     #kpFooter .navbar-header {
         float: none;
@@ -88,7 +79,7 @@
     }
     #kpFooter .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        box-shadow: $boxShadow;
     }
     #kpFooter .navbar-fixed-top {
         top: 0;
@@ -105,11 +96,30 @@
         float: none;
     }
     #kpFooter .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $footerPadding;
+        padding-bottom: $footerPadding;
     }
     #kpFooter .collapse.in{
         display:block !important;
+    }
+}
+/*
+ |---------------------------------------
+ | Make it look nice while doing that :)
+ |---------------------------------------
+ */
+@media only screen and (max-width:767px) {
+    #kpFooter #contactHours,
+    #kpFooter #copyright {
+       margin-top: 20px;
+    }
+} @media only screen and (min-width:768px) {
+    #kpFooter #kpFooterContainer .col-sm-4 {
+        width: 30.33333333%;
+    }
+} @media only screen and (max-width:780px) {
+    #kpFooter .container-fullwidth {
+        margin: 0 70px 0 10px;
     }
 }
 

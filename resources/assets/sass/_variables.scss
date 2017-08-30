@@ -1,3 +1,8 @@
+/*
+ |---------------------------------------------------------------------------------------
+ | DEFAULT VARIABLES
+ |---------------------------------------------------------------------------------------
+ */
 
 // Body
 $body-bg: #f5f8fa;
@@ -37,24 +42,112 @@ $input-color-placeholder: lighten($text-color, 30%);
 // Panels
 $panel-default-heading-bg: #fff;
 
-/* Colors: text */
-$textColor: white;
-$textShadow: 0px 4px 3px rgba(0, 0, 0, 0.2),
-             0px 8px 13px rgba(0, 0, 0, 0.1),
-             0px 18px 23px rgba(0, 0, 0, 0.1);
-$linkHoverColor: rgba(140, 60, 25, 1);
-$invalidColor: red;
-$validColor: green;
-/* Colors: background */
-$darkBackgroundLight:  rgba(0, 0, 0, 0.3);
-$darkBackgroundMedium:  rgba(0, 0, 0, 0.5);
-$darkBackgroundDark:  rgba(0, 0, 0, 0.8);
+
+
 
 /*
-    CONTACT PAGE SPECIFIC
+ |---------------------------------------------------------------------------------------
+ | CUSTOM VARIABLES
+ |---------------------------------------------------------------------------------------
+ */
+
+
+
+
+/*
+ |--------
+ | COLORS
+ |--------
+ */
+
+// text
+$invalidColor: red;
+$linkHoverColor: rgb(186, 85, 53);
+$textColor: white;
+$textShadow: 0px 4px 3px rgba(186, 85, 53, 0.2),
+             0px 8px 13px rgba(186, 85, 53, 0.1),
+             0px 18px 23px rgba(186, 85, 53, 0.1);
+$validColor: green;
+
+// buttons
+$buttonColor: rgba(206, 105, 73, 1);
+
+// background
+$darkBackgroundDark: rgba(0, 0, 0, 0.8);
+$darkBackgroundLight: rgba(0, 0, 0, 0.3);
+$darkBackgroundMedium: rgba(0, 0, 0, 0.5);
+
+
+
+
+/*
+ |---------
+ | GENERAL
+ |---------
+ */
+$background: url(https://images.unsplash.com/photo-1485160497022-3e09382fb310?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+$font: Lato;
+
+
+
+
+/*
+ |--------
+ | NAVBAR 
+ |--------
+ */
+$brandPaddingLeft: 30px;
+$boxShadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+$imgRadius: 10%;
+$imgSize: 55px;
+$topMargin: -22px;
+
+
+
+
+/*
+ |-----------------
+ | COLLAPSE BUTTON 
+ |-----------------
+ */
+$buttonMargin: 10px;
+$buttonPosition: fixed;
+$buttonPositionNum: 0;
+$smallButtonPadding: 13px;
+
+
+
+
+/*
+ |--------
+ | FOOTER 
+ |--------
+ */
+$footerBorderRadius: 25px;
+$footerMargin: 0 80px;
+$footerPadding: 10px;
+$tdSpacing: 3px;
+
+
+
+
+/*
+ |-------
+ | LEGAL 
+ |-------
+ */
+$titlePadding: 2%;
+
+
+
+
+/*
+ |---------
+ | CONTACT 
+ |---------
 */
 $contactBorderRadius: 5px;
+$contactIsize: 1.6rem;
+$contactTitleHorPadding: 8px;
 $contactTitleTopMargin: 20px;
 $contactTitleVertPadding: 4px;
-$contactTitleHorPadding: 8px;
-$contactIsize: 1.6rem;

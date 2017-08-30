@@ -1,11 +1,57 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);@charset "UTF-8";
 
-/* Colors: text */
-
-/* Colors: background */
+/*
+ |---------------------------------------------------------------------------------------
+ | DEFAULT VARIABLES
+ |---------------------------------------------------------------------------------------
+ */
 
 /*
-    CONTACT PAGE SPECIFIC
+ |---------------------------------------------------------------------------------------
+ | CUSTOM VARIABLES
+ |---------------------------------------------------------------------------------------
+ */
+
+/*
+ |--------
+ | COLORS
+ |--------
+ */
+
+/*
+ |---------
+ | GENERAL
+ |---------
+ */
+
+/*
+ |--------
+ | NAVBAR 
+ |--------
+ */
+
+/*
+ |-----------------
+ | COLLAPSE BUTTON 
+ |-----------------
+ */
+
+/*
+ |--------
+ | FOOTER 
+ |--------
+ */
+
+/*
+ |-------
+ | LEGAL 
+ |-------
+ */
+
+/*
+ |---------
+ | CONTACT 
+ |---------
 */
 
 /*!
@@ -8358,12 +8404,11 @@ button.close {
   }
 }
 
-/*****************************************************************************************
- * GENERAL STYLE                                                                         *
- *****************************************************************************************/
-
-/* PAGE
- *******/
+/*
+ |------
+ | PAGE
+ |------
+ */
 
 html {
   height: 100%;
@@ -8372,54 +8417,31 @@ html {
 
 body {
   background: url(https://images.unsplash.com/photo-1485160497022-3e09382fb310?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
-  background-size: cover;
-  background-position: center;
   background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: Lato;
 }
 
-/* COLLAPSE NAVBARS SOONER
- **************************/
-
-@media (min-width: 768px) and (max-width: 800px) {
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-
-  .navbar-collapse.collapse.in {
-    display: block !important;
-  }
-
-  .navbar-header .collapse,
-  .navbar-toggle {
-    display: block !important;
-  }
-
-  .navbar-header {
-    float: none;
-  }
-}
-
-/* BROWSER FIXES
- ****************/
-
-/* Remove select box outline in firefox */
+/*
+ |---------------
+ | BROWSER FIXES
+ |---------------
+ */
 
 select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
-/* Remove standard dropdown arrow. TODO: show the right arrow? */
-
 select {
   -moz-appearance: none;
-  /*text-indent: 0.01px;
-    text-overflow: '';*/
+  /*
+    text-indent: 0.01px;
+    text-overflow: '';
+    */
 }
-
-/* Set input-placeholder color to textcolor */
 
 ::-webkit-input-placeholder {
   color: white;
@@ -8458,10 +8480,12 @@ select {
   background: 0;
   border: 0;
   color: white;
+  text-shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
 }
 
 #homeBar a {
   color: white;
+  text-shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
 }
 
 #homeBar .active a,
@@ -8470,25 +8494,21 @@ select {
 }
 
 #homeBar .navbar-brand {
+  margin-top: -22px;
   padding-left: 30px;
 }
 
-#homeBar .logo img {
-  height: 55px;
-  width: 55px;
-  border-bottom-right-radius: 10%;
-  position: fixed;
-  top: 0;
-  left: 0;
+#homeBar .navbar-right {
+  margin-top: -22px;
 }
 
-#beImg img {
-  height: 55px;
-  width: 55px;
+#homeBar .logo img {
   border-bottom-right-radius: 10%;
+  height: 55px;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
+  width: 55px;
 }
 
 #homeBar .icon-bar {
@@ -8496,15 +8516,15 @@ select {
 }
 
 #homeBar button {
+  background: #ce6949;
   position: fixed;
   right: 0;
   top: 0;
-  background: #ce6949;
 }
 
 #homeBar button > i {
-  margin: 10px;
   color: white;
+  margin: 10px;
 }
 
 #homeBar button:focus,
@@ -8512,8 +8532,11 @@ select {
   background: #ba5535;
 }
 
-/* FOOTER
- *********/
+@media (max-width: 768px) {
+  #home > a {
+    margin-top: 50px;
+  }
+}
 
 #kpFooter * {
   border: 0;
@@ -8525,46 +8548,27 @@ select {
   margin: 0 80px;
 }
 
-@media only screen and (max-width: 767px) {
-  #kpFooter #contactHours,
-  #kpFooter #copyright {
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #kpFooter #kpFooterContainer .col-sm-4 {
-    width: 30.33333333%;
-  }
-}
-
-@media only screen and (max-width: 780px) {
-  #kpFooter .container-fullwidth {
-    margin: 0 70px 0 10px;
-  }
-}
-
 #kpFooter .navbar-inverse .navbar-collapse {
-  background: white;
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 25px;
   overflow-x: hidden;
+  margin: 0;
   max-height: 100%;
   padding: 10px;
-  margin: 0;
 }
 
 #kpFooter {
-  color: #dc9664;
-  text-shadow: 0px 4px 3px rgba(255, 190, 140, 0.1), 0px 8px 13px rgba(255, 190, 140, 0.05), 0px 18px 23px rgba(255, 190, 140, 0.05);
+  color: white;
+  text-shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
 }
 
 #kpFooter a {
-  color: #dc9664;
+  color: white;
 }
 
 #kpFooter a:hover,
 #kpFooter a:focus {
-  color: #8c3c19;
+  color: #ba5535;
   text-decoration: none;
 }
 
@@ -8583,20 +8587,22 @@ select {
 
 #kpFooter button {
   background: #ce6949;
+  border: 0;
+  bottom: 0;
   position: fixed;
   right: 0;
-  bottom: 0;
-  border: 0;
 }
 
 #kpFooter button > i {
-  margin: 10px;
   color: white;
+  padding: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 
 #kpFooter button:focus,
 #kpFooter button:hover {
-  background: rgba(186, 85, 53, 0.5);
+  background: #ba5535;
 }
 
 #kpFooter td {
@@ -8604,6 +8610,12 @@ select {
   padding-bottom: 3px;
   padding-right: 10px;
 }
+
+/*
+ |---------------------------------
+ | Keep footer collapsed to button
+ |---------------------------------
+ */
 
 @media only screen and (max-width: 2000px) {
   #kpFooter .navbar-header {
@@ -8621,8 +8633,8 @@ select {
 
   #kpFooter .navbar-collapse {
     border-top: 1px solid transparent;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
   }
 
   #kpFooter .navbar-fixed-top {
@@ -8653,12 +8665,30 @@ select {
   }
 }
 
-/*****************************************************************************************
- * HOME PAGE STYLE                                                                       *
- *****************************************************************************************/
+/*
+ |---------------------------------------
+ | Make it look nice while doing that :)
+ |---------------------------------------
+ */
 
-/* CONTENT
- **********/
+@media only screen and (max-width: 767px) {
+  #kpFooter #contactHours,
+  #kpFooter #copyright {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #kpFooter #kpFooterContainer .col-sm-4 {
+    width: 30.33333333%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #kpFooter .container-fullwidth {
+    margin: 0 70px 0 10px;
+  }
+}
 
 #homeMain {
   min-height: 100%;
@@ -8667,190 +8697,115 @@ select {
 #jumboHome {
   background: 0;
   display: table;
-  position: absolute;
   height: 100%;
+  position: absolute;
   width: 100%;
 }
 
 #homeContent {
   color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   display: table-cell;
+  font-size: 2rem;
+  padding: 0.5%;
+  text-shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
   vertical-align: middle;
+}
+
+#homeContent h1 {
+  font-weight: 700;
+  padding-bottom: 2%;
 }
 
 #homeText {
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
   max-width: 100%;
+  width: 500px;
 }
-
-#homeContent h1,
-#homeContent a,
-#homeContent a:hover,
-#portfolioText {
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-}
-
-/* Button*/
-
-#homeContent button {
-  color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  background: rgba(146, 85, 53, 0);
-  border: 0;
-  font-size: 2rem;
-  padding: 0;
-  margin-bottom: 6px;
-}
-
-#homeContent button:hover,
-#homeContent button:focus,
-#homeContent button:active,
-#homeContent button:visited {
-  background: #925535;
-  border: 0;
-  padding: 10px;
-  text-transform: capitalize;
-  outline: 0;
-}
-
-#homeContent #homeText {
-  font-size: 2rem;
-  padding: 0.5%;
-}
-
-#homeContent #homeText h1 {
-  padding-bottom: 2%;
-}
-
-/* SMALLER SCREENS
- ******************/
 
 @media only screen and (max-width: 780px) {
   #homeText {
     margin-top: -55px;
+    width: 100%;
   }
 
   #jumboHome .break {
     display: none;
   }
-
-  #homeText {
-    width: 100%;
-  }
 }
 
-/*****************************************************************************************
- * SKILLS PAGE STYLE                                                                     *
- *****************************************************************************************/
-
-/* FILTER BUTTONS
- *****************/
-
-#cvButtons .navbar-center {
-  float: none;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  border: 0;
-}
-
-#cvButtons .navbar-center li {
-  float: none;
-  display: inline-block;
-  border: 0;
-}
+/*
+ |----------------
+ | FILTER BUTTONS
+ |----------------
+ */
 
 #cvButtons {
   background: 0;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  min-height: unset;
-  color: white;
   border: 0;
 }
 
 #cvButtons .filter-button {
+  background: #ce6949;
   border: 0;
-  background: rgba(186, 85, 53, 0.5);
   color: white;
+  font-size: 1.2em;
   margin-bottom: 20px;
-  margin-left: 100%;
-  position: relative;
-  float: right;
-  width: 150px;
+  margin-left: 20px;
+  text-align: center;
+  width: 160px;
 }
 
-#cvButtons button:focus,
 #cvButtons button:hover,
-#cvButtons button:active,
-#cvButtons button:target,
-#cvButtons a:active,
-#cvButtons a:target {
-  background: rgba(186, 85, 53, 0.5);
-  border: 0;
+#cvButtons button.selected {
+  background: #ba5535;
   outline: 0;
 }
 
-#cvButtons button.selected {
-  background: #ba5535;
-}
-
 @media only screen and (max-width: 991px) {
-  #cvButtons .filter-button {
-    margin-left: 0;
-    float: left;
-  }
-
   #cvButtons .break {
     display: none;
   }
 }
 
-/* SKILL BUTTONS
- ****************/
+/*
+ |---------------
+ | SKILL BUTTONS
+ |---------------
+ */
 
 #cvSkills button {
-  background: rgba(0, 0, 0, 0.03);
+  background: #ce6949;
   border: 0;
   color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  margin: 5px;
   font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-shadow: textShadow;
 }
 
-#cvSkills button:hover {
-  background: 0;
-  background: rgba(186, 85, 53, 0.5);
+#cvSkills button:hover,
+#cvSkills button.selected {
+  background: #ba5535;
   cursor: initial;
+  outline: 0;
 }
-
-/*****************************************************************************************
- * PORTFOLIO                                                                             *
- *****************************************************************************************/
 
 #portfolioMain h1 {
   color: white;
   text-align: center;
-  shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+  shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
   background: rgba(0, 0, 0, 0.3);
   padding: 10px;
   margin-top: 60px;
 }
 
-/*****************************************************************************************
- * CONTACT PAGE                                                                          *
- *****************************************************************************************/
-
-/* CONTACT FORM
- ***************/
+/*
+ |--------------
+ | CONTACT FORM
+ |--------------
+ */
 
 #contactForm {
   color: white;
@@ -8865,30 +8820,29 @@ select {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   display: block;
-  text-align: left;
-  margin-top: 20px;
   margin-bottom: 0;
-  padding-top: 4px;
+  margin-top: 20px;
   padding-bottom: 4px;
   padding-left: 8px;
+  padding-top: 4px;
+  text-align: left;
+  text-shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
   width: 100%;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 #contactForm .formIcon i {
   font-size: 1.6rem;
   padding-right: 8px;
-  /*padding-bottom: 0;*/
 }
 
 #contactForm .formField,
 #contactForm .formField select {
-  border: 0;
   background: 0;
-  padding-left: 4px;
-  outline: none;
-  color: white;
+  border: 0;
   border-radius: 5px;
+  color: white;
+  outline: none;
+  padding-left: 4px;
 }
 
 #contactForm .formField:hover,
@@ -8932,12 +8886,12 @@ select {
 }
 
 #contactForm .formButton {
-  width: 100%;
   background: rgba(0, 0, 0, 0.8);
   border: 0;
-  padding: 8px;
-  outline: none;
   border-radius: 5px;
+  outline: none;
+  padding: 8px;
+  width: 100%;
 }
 
 #contactForm .formButton:hover {
@@ -8956,8 +8910,11 @@ select {
   color: green;
 }
 
-/* CONTACT INFORMATION
- **********************/
+/*
+ |---------------------
+ | CONTACT INFORMATION
+ |---------------------
+ */
 
 #contactInfo,
 #contactInfo a {
@@ -8965,23 +8922,23 @@ select {
 }
 
 #contactInfo a:hover {
-  color: #8c3c19;
+  color: #ba5535;
   text-decoration: none;
 }
 
 #contactInfo .infoHeader {
   background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
   display: block;
-  text-align: left;
-  margin-top: 20px;
+  height: 29px;
   margin-bottom: 0;
-  padding-top: 4px;
+  margin-top: 20px;
   padding-bottom: 4px;
   padding-left: 8px;
+  padding-top: 4px;
+  text-align: left;
+  text-shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
   width: 100%;
-  height: 29px;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
 
 #contactInfo .infoHeader i {
@@ -8992,10 +8949,10 @@ select {
 #contactInfo #formIcons li {
   display: block;
   float: right;
-  text-align: right;
-  margin-top: -21px;
   font-size: 1.6rem;
+  margin-top: -21px;
   padding-bottom: 0;
+  text-align: right;
 }
 
 @media only screen and (max-width: 440px) {
@@ -9030,14 +8987,14 @@ select {
 }
 
 #contactInfo .infoBody .lastrow {
-  width: 90000px;
-  border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 90000px;
 }
 
 #contactInfo .infoBody .firstrow {
-  border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 #contactInfo .infoBody tr:hover,
@@ -9047,9 +9004,9 @@ select {
 
 #contactInfo .infoBody pre {
   background: rgba(0, 0, 0, 0.5);
-  color: white;
   border: 0;
   border-radius: 5px;
+  color: white;
 }
 
 /* PGP Expanding text */
@@ -9063,44 +9020,36 @@ select {
 }
 
 #PGP summary:hover {
-  color: #8c3c19;
+  color: #ba5535;
   cursor: pointer;
 }
 
-/*****************************************************************************************
- * LEGAL TEXTS                                                                           *
- *****************************************************************************************/
-
 #legalMain {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
   font-size: 1.2em;
-  padding: 20px;
   margin-bottom: 40px;
+  padding: 20px;
+  text-shadow: 0px 4px 3px rgba(186, 85, 53, 0.2), 0px 8px 13px rgba(186, 85, 53, 0.1), 0px 18px 23px rgba(186, 85, 53, 0.1);
 }
 
 #legalMain h1 {
   font-weight: 700;
-  color: white;
-  text-decoration: none;
   padding-bottom: 2%;
 }
 
 #legalMain h2 {
-  color: white;
-  text-decoration: none;
   padding-bottom: 2%;
   padding-top: 2%;
 }
 
 #legalMain a {
-  color: #f0c39b;
+  color: #ce6949;
 }
 
 #legalMain .active a,
 #legalMain a:hover {
-  color: #f0afaf;
+  color: #ba5535;
   text-decoration: none;
 }
 

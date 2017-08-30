@@ -1,10 +1,8 @@
-/*****************************************************************************************
- * CONTACT PAGE                                                                          *
- *****************************************************************************************/
-
-
-/* CONTACT FORM
- ***************/
+/*
+ |--------------
+ | CONTACT FORM
+ |--------------
+ */
 #contactForm {
     color: $textColor;
 }
@@ -16,38 +14,57 @@
     background: $darkBackgroundMedium;
     border-radius: $contactBorderRadius;
     display: block;
-    text-align: left;
-    margin-top: $contactTitleTopMargin;
     margin-bottom: 0;
-    padding-top: $contactTitleVertPadding;
+    margin-top: $contactTitleTopMargin;
     padding-bottom: $contactTitleVertPadding;
     padding-left: $contactTitleHorPadding;
-    width: 100%;
+    padding-top: $contactTitleVertPadding;
+    text-align: left;
     text-shadow: $textShadow;
+    width: 100%;
 }
 #contactForm .formIcon i {
     font-size: $contactIsize;
     padding-right: $contactTitleHorPadding;
-    /*padding-bottom: 0;*/
 }
-#contactForm .formField, #contactForm .formField select {
-    border: 0;
+#contactForm .formField,
+#contactForm .formField select {
     background: 0;
-    padding-left: 4px;
-    outline: none;
-    color: $textColor;
+    border: 0;
     border-radius: $contactBorderRadius;
+    color: $textColor;
+    outline: none;
+    padding-left: 4px;
 }
-#contactForm .formField:hover, #contactForm .formField:focus {
+#contactForm .formField:hover,
+#contactForm .formField:focus {
     background: $darkBackgroundDark;
 }
-#contactForm .formError, #contactForm .formReaction, #contactForm #firstName, #contactForm #lastName, #contactForm #comment, #contactForm #phone, #contactForm #email, #contactForm #subject {
+#contactForm .formError,
+#contactForm .formReaction,
+#contactForm #firstName,
+#contactForm #lastName,
+#contactForm #comment,
+#contactForm #phone,
+#contactForm #email,
+#contactForm #subject {
     padding-left: $contactTitleHorPadding;
 }
-#contactForm #firstName, #contactForm #lastName, #contactForm #title, #contactForm #phone, #contactForm #email, #contactForm #subject {
+#contactForm #firstName,
+#contactForm #lastName,
+#contactForm #title,
+#contactForm #phone,
+#contactForm #email,
+#contactForm #subject {
     height: 30px;
 }
-#contactForm #phone, #contactForm #email, #contactForm #subject, #contactForm #title, #contactForm #firstName, #contactForm #lastName, #contactForm #comment {
+#contactForm #phone,
+#contactForm #email,
+#contactForm #subject,
+#contactForm #title,
+#contactForm #firstName,
+#contactForm #lastName,
+#contactForm #comment {
     width: 100%;
 }
 #contactForm #comment {
@@ -55,29 +72,37 @@
     resize: none;
 }
 #contactForm .formButton {
-    width: 100%;
     background: $darkBackgroundDark;
     border: 0;
-    padding: $contactTitleHorPadding;
-    outline: none;
     border-radius: $contactBorderRadius;
+    outline: none;
+    padding: $contactTitleHorPadding;
+    width: 100%;
 }
 #contactForm .formButton:hover {
     background: $darkBackgroundLight;
 }
-#contactForm input:focus:invalid, #contactForm textarea:focus:invalid, .formError {
+#contactForm input:focus:invalid,
+#contactForm textarea:focus:invalid,
+.formError {
     color: $invalidColor;
 }
-#contactForm input:focus:valid, #contactForm textarea:focus:valid, .formReaction {
+#contactForm input:focus:valid,
+#contactForm textarea:focus:valid,
+.formReaction {
     color: $validColor;
 }
 
 
 
 
-/* CONTACT INFORMATION
- **********************/
-#contactInfo, #contactInfo a {
+/*
+ |---------------------
+ | CONTACT INFORMATION
+ |---------------------
+ */
+#contactInfo,
+#contactInfo a {
     color: $textColor;
 }
 #contactInfo a:hover {
@@ -86,29 +111,29 @@
 }
 #contactInfo .infoHeader {
     background: $darkBackgroundMedium;
+    border-radius: $contactBorderRadius;
     display: block;
-    text-align: left;
-    margin-top: $contactTitleTopMargin;
+    height: 29px;
     margin-bottom: 0;
-    padding-top: $contactTitleVertPadding;
+    margin-top: $contactTitleTopMargin;
     padding-bottom: $contactTitleVertPadding;
     padding-left: $contactTitleHorPadding;
-    width: 100%;
-    height: 29px;
+    padding-top: $contactTitleVertPadding;
+    text-align: left;
     text-shadow: $textShadow;
-    border-radius: $contactBorderRadius;
+    width: 100%;
 }
 #contactInfo .infoHeader i {
     font-size: $contactIsize;
     padding-right: $contactTitleHorPadding;
 }
 #contactInfo #formIcons li {
-    display: /*inline-*/block;
+    display: block;
     float: right;
-    text-align: right;
-    margin-top: -21px;
     font-size: $contactIsize;
+    margin-top: -21px;
     padding-bottom: 0;
+    text-align: right;
 }
 @media only screen and (max-width:440px) {
     #contactInfo #formIcons li {
@@ -118,7 +143,8 @@
         text-align: left;
     }
 }
-#contactInfo .infoBody td, #contactInfo .infoBody summary {
+#contactInfo .infoBody td,
+#contactInfo .infoBody summary {
     padding-left: 10px;
 }
 #contactInfo .infoBody summary {
@@ -135,23 +161,24 @@
     width: 500px;
 }
 #contactInfo .infoBody .lastrow {
-    width: 90000px;
-    border-top-right-radius: $contactBorderRadius;
     border-bottom-right-radius: $contactBorderRadius;
+    border-top-right-radius: $contactBorderRadius;
+    width: 90000px;
 }
 #contactInfo .infoBody .firstrow {
-    border-top-left-radius: $contactBorderRadius;
     border-bottom-left-radius: $contactBorderRadius;
+    border-top-left-radius: $contactBorderRadius;
 }
-#contactInfo .infoBody tr:hover, #contactInfo .infoBody summary:hover {
+#contactInfo .infoBody tr:hover,
+#contactInfo .infoBody summary:hover {
     background: $darkBackgroundDark;
 
 }
 #contactInfo .infoBody pre {
     background: $darkBackgroundMedium;
-    color: $textColor;
     border: 0;
     border-radius: $contactBorderRadius;
+    color: $textColor;
 }
 
 /* PGP Expanding text */
@@ -159,7 +186,7 @@
     outline: 0;
 }
 #PGP .pgpExpand {
-    margin-left: 20px;
+    margin-left: $contactTitleTopMargin;
 }
 #PGP summary:hover {
     color: $linkHoverColor;

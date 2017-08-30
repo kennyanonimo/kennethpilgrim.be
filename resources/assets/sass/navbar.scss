@@ -9,49 +9,52 @@
 .dropdown * {
     background: 0;
     border: 0;
-    color: white;
+    color: $textColor;
+    text-shadow: $textShadow;
 }
 #homeBar a {
-    color: white;
+    color: $textColor;
+    text-shadow: $textShadow;
 }
 #homeBar .active a,
 #homeBar a:hover {
-    color: rgb(186, 85, 53);
+    color: $linkHoverColor;
 }
 #homeBar .navbar-brand{
-    padding-left: 30px;
+    margin-top: $topMargin;
+    padding-left: $brandPaddingLeft;
+}
+#homeBar .navbar-right{
+    margin-top: $topMargin;
 }
 #homeBar .logo img {
-    height: 55px;
-    width: 55px;
-    border-bottom-right-radius: 10%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-#beImg img {
-    height: 55px;
-    width: 55px;
-    border-bottom-right-radius: 10%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    border-bottom-right-radius: $imgRadius;
+    height: $imgSize;
+    left: $buttonPositionNum;
+    position: $buttonPosition;
+    top: $buttonPositionNum;
+    width: $imgSize;
 }
 #homeBar .icon-bar {
-    background: white;
+    background: $textColor;
 }
 #homeBar button {
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: rgba(206, 105, 73, 1);
+    background: $buttonColor;
+    position: $buttonPosition;
+    right: $buttonPositionNum;
+    top: $buttonPositionNum;
 }
 #homeBar button>i {
-    margin: 10px;
-    color: white;
+    color: $textColor;
+    margin: $buttonMargin;
 }
 #homeBar button:focus,
 #homeBar button:hover {
-    background: rgb(186, 85, 53);
+    background: $linkHoverColor;
 }
 
+@media (max-width: 768px) {
+    #home > a {
+        margin-top: 50px;
+    }
+}

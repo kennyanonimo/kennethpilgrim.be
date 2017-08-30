@@ -21,7 +21,7 @@
                             Browse around to learn more about me.<br class="break" />
                             In the future I may add a blog and some tutorials.
                         </p>
-                                            </div>
+                    </div>
                 </div>
             </div>
         </div>
