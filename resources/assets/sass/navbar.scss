@@ -1,0 +1,57 @@
+/* NAVBAR
+ *********/
+#homeBar *{
+    border: 0;
+    box-shadow: unset;
+}
+#homeBar,
+.dropdown-menu,
+.dropdown * {
+    background: 0;
+    border: 0;
+    color: white;
+}
+#homeBar a {
+    color: white;
+}
+#homeBar .active a,
+#homeBar a:hover {
+    color: rgb(186, 85, 53);
+}
+#homeBar .navbar-brand{
+    padding-left: 30px;
+}
+#homeBar .logo img {
+    height: 55px;
+    width: 55px;
+    border-bottom-right-radius: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#beImg img {
+    height: 55px;
+    width: 55px;
+    border-bottom-right-radius: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#homeBar .icon-bar {
+    background: white;
+}
+#homeBar button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgba(206, 105, 73, 1);
+}
+#homeBar button>i {
+    margin: 10px;
+    color: white;
+}
+#homeBar button:focus,
+#homeBar button:hover {
+    background: rgb(186, 85, 53);
+}
+

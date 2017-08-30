@@ -1,0 +1,95 @@
+
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+// Variables
+//@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* GENERAL + OUTER STYLING */
+body {
+    /*background: rgba(80, 170, 150, 0.1);*/
+    font-family: Lato;
+}
+.outer {
+    background: rgba(80, 170, 150, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* PICTURE COLUMN */
+.picCol {
+    margin-top: 20px;
+    /*margin-left: 20px;*/
+    padding-right: 0;
+    margin-right: 0;
+}
+.picCol .thumbnail {
+    border: 0;
+    background: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+.picCol .thumbnail img {
+    max-height: 240px;
+}
+
+
+/* TEXT COLUMN */
+.textCol h1 , .textCol h2 {
+    text-transform: uppercase;
+    padding: 0;
+}
+.textCol h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+.textCol h2 {
+    font-size: 0.8em;
+    color: rgba(105, 108, 108, 0.6);
+    margin-top: 0px;
+    margin-bottom: 26px;
+}
+.textCol p {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    color: black;
+    font-size: 1em;
+}
+.textCol a {
+    color: black;
+    font-size: 1em;
+}
+.textCol a:hover {
+    color: rgba(0, 170, 100, 0.8);
+    text-decoration: none;
+}
+.textCol i {
+    font-size: 1em;
+    padding-right: 6px;
+    color: rgba(0, 170, 100, 0.8);
+}
+.textCol .socialLink {
+    font-size: 1.6em;
+    padding-top: 20px;
+}
+.textCol .socialLink:hover {
+    color: rgba(0, 170, 100, 0.5);
+}
+.legal p {
+    /*background: rgba(100, 100, 100, 0.05);*/
+    color: rgba(80, 170, 150, 0.35);/*rgba(0, 0, 0, 0.2);*/
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/**
+ * NEW COMMENT
+ **/
+/* #newComment span {
+    margin-left: 20px;
+} */

@@ -1,0 +1,21 @@
+
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "general.scss";
+@import "navbar.scss";
+@import "footer.scss";
+@import "home.scss";
+@import "skills.scss";
+@import "portfolio.scss";
+@import "contact.scss";
+@import "legal.scss";
+
+@import "dash.scss";

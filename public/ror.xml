@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://kennethpilgrim.be/</title>
+  <link>https://kennethpilgrim.be/</link>
+
+<item>
+     <link>https://kennethpilgrim.be/</link>
+     <title>Kenneth Pilgrim</title>
+     <description>I'm a Full-Stack Developer from Belgium.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kennethpilgrim.be/skills</link>
+     <title>Kenneth Pilgrim</title>
+     <description>I'm a Full-Stack Developer from Belgium.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kennethpilgrim.be/contact</link>
+     <title>Kenneth Pilgrim</title>
+     <description>I'm a Full-Stack Developer from Belgium.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kennethpilgrim.be/portfolio</link>
+     <title>Kenneth Pilgrim</title>
+     <description>I'm a Full-Stack Developer from Belgium.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kennethpilgrim.be/mit</link>
+     <title>Kenneth Pilgrim</title>
+     <description>I'm a Full-Stack Developer from Belgium.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kennethpilgrim.be/privacy</link>
+     <title>Kenneth Pilgrim</title>
+     <description>I'm a Full-Stack Developer from Belgium.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://kennethpilgrim.be/terms</link>
+     <title>Kenneth Pilgrim</title>
+     <description>I'm a Full-Stack Developer from Belgium.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

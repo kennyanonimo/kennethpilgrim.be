@@ -1,0 +1,171 @@
+/*****************************************************************************************
+ * CONTACT PAGE                                                                          *
+ *****************************************************************************************/
+
+
+/* CONTACT FORM
+ ***************/
+#contactForm {
+    color: $textColor;
+}
+#contactForm .formHeader {
+    margin: 0;
+    padding-bottom: 20px;
+}
+#contactForm .formIcon {
+    background: $darkBackgroundMedium;
+    border-radius: $contactBorderRadius;
+    display: block;
+    text-align: left;
+    margin-top: $contactTitleTopMargin;
+    margin-bottom: 0;
+    padding-top: $contactTitleVertPadding;
+    padding-bottom: $contactTitleVertPadding;
+    padding-left: $contactTitleHorPadding;
+    width: 100%;
+    text-shadow: $textShadow;
+}
+#contactForm .formIcon i {
+    font-size: $contactIsize;
+    padding-right: $contactTitleHorPadding;
+    /*padding-bottom: 0;*/
+}
+#contactForm .formField, #contactForm .formField select {
+    border: 0;
+    background: 0;
+    padding-left: 4px;
+    outline: none;
+    color: $textColor;
+    border-radius: $contactBorderRadius;
+}
+#contactForm .formField:hover, #contactForm .formField:focus {
+    background: $darkBackgroundDark;
+}
+#contactForm .formError, #contactForm .formReaction, #contactForm #firstName, #contactForm #lastName, #contactForm #comment, #contactForm #phone, #contactForm #email, #contactForm #subject {
+    padding-left: $contactTitleHorPadding;
+}
+#contactForm #firstName, #contactForm #lastName, #contactForm #title, #contactForm #phone, #contactForm #email, #contactForm #subject {
+    height: 30px;
+}
+#contactForm #phone, #contactForm #email, #contactForm #subject, #contactForm #title, #contactForm #firstName, #contactForm #lastName, #contactForm #comment {
+    width: 100%;
+}
+#contactForm #comment {
+    margin-bottom: 0;
+    resize: none;
+}
+#contactForm .formButton {
+    width: 100%;
+    background: $darkBackgroundDark;
+    border: 0;
+    padding: $contactTitleHorPadding;
+    outline: none;
+    border-radius: $contactBorderRadius;
+}
+#contactForm .formButton:hover {
+    background: $darkBackgroundLight;
+}
+#contactForm input:focus:invalid, #contactForm textarea:focus:invalid, .formError {
+    color: $invalidColor;
+}
+#contactForm input:focus:valid, #contactForm textarea:focus:valid, .formReaction {
+    color: $validColor;
+}
+
+
+
+
+/* CONTACT INFORMATION
+ **********************/
+#contactInfo, #contactInfo a {
+    color: $textColor;
+}
+#contactInfo a:hover {
+    color:$linkHoverColor;
+    text-decoration: none;
+}
+#contactInfo .infoHeader {
+    background: $darkBackgroundMedium;
+    display: block;
+    text-align: left;
+    margin-top: $contactTitleTopMargin;
+    margin-bottom: 0;
+    padding-top: $contactTitleVertPadding;
+    padding-bottom: $contactTitleVertPadding;
+    padding-left: $contactTitleHorPadding;
+    width: 100%;
+    height: 29px;
+    text-shadow: $textShadow;
+    border-radius: $contactBorderRadius;
+}
+#contactInfo .infoHeader i {
+    font-size: $contactIsize;
+    padding-right: $contactTitleHorPadding;
+}
+#contactInfo #formIcons li {
+    display: /*inline-*/block;
+    float: right;
+    text-align: right;
+    margin-top: -21px;
+    font-size: $contactIsize;
+    padding-bottom: 0;
+}
+@media only screen and (max-width:440px) {
+    #contactInfo #formIcons li {
+        display: inline;
+        float: inline-start;
+        margin-top: 0px;
+        text-align: left;
+    }
+}
+#contactInfo .infoBody td, #contactInfo .infoBody summary {
+    padding-left: 10px;
+}
+#contactInfo .infoBody summary {
+    border-radius: $contactBorderRadius;
+}
+#contactInfo .infoBody table {
+    border: 0;
+}
+#contactInfo .infoBody td {
+    border: 0;
+    padding-right: $contactTitleHorPadding;
+}
+#contactInfo .infoBody td {
+    width: 500px;
+}
+#contactInfo .infoBody .lastrow {
+    width: 90000px;
+    border-top-right-radius: $contactBorderRadius;
+    border-bottom-right-radius: $contactBorderRadius;
+}
+#contactInfo .infoBody .firstrow {
+    border-top-left-radius: $contactBorderRadius;
+    border-bottom-left-radius: $contactBorderRadius;
+}
+#contactInfo .infoBody tr:hover, #contactInfo .infoBody summary:hover {
+    background: $darkBackgroundDark;
+
+}
+#contactInfo .infoBody pre {
+    background: $darkBackgroundMedium;
+    color: $textColor;
+    border: 0;
+    border-radius: $contactBorderRadius;
+}
+
+/* PGP Expanding text */
+#PGP * {
+    outline: 0;
+}
+#PGP .pgpExpand {
+    margin-left: 20px;
+}
+#PGP summary:hover {
+    color: $linkHoverColor;
+    cursor: pointer;
+}
+
+
+
+
