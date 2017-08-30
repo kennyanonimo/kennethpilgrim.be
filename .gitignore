@@ -11,10 +11,12 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
+desktop.ini
 =======
 vendor/
 node_modules/
 npm-debug.log
+desktop.ini
 
 # Laravel 4 specific
 bootstrap/compiled.php
