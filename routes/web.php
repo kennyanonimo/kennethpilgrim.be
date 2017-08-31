@@ -23,6 +23,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/test', 'RedirectController@test');
     Route::get('/dashboard', 'RedirectController@dashboard');
     Route::get('/comments', 'RedirectController@comments');
+    Route::get('/notes', 'RedirectController@notes');
+
 
     Route::get('/home', 'HomeController@index')->name('home');
 });
@@ -43,5 +45,6 @@ Auth::routes();
 */
 Route::group(['middleware' => ['web']], function () {
     Route::post('comment', 'CommentController@submit');
+    Route::post('notes', 'NotesController@submit');
 });
 

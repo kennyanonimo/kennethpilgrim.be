@@ -37,6 +37,7 @@
                         </li>
                         <li id="dashboard"><a href="./dashboard">Dashboard</a></li>
                         <li id="comments"><a href="./comments">Comments</a></li>
+                        <li id="notes"><a href="./notes">Notes</a></li>
                     </ul>
                 </li>
                 </ul>

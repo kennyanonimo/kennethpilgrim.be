@@ -239,26 +239,58 @@ class RedirectController extends Controller {
             )
         );
     }
+    public function notes() {
+        $sociallinkArray = $this->sociallinks();
+        $notesArray = $this->notesList();
+        $notesCategoriesArray = $this->notesCategoriesList();
+        return view(
+            'backend.notes',[
+                'page' => 'comments',
+                'keywords' => $this->values('keywords'),
+                'name' => $this->values('name'),
+                'description' => $this->values('description'),
+                'url' => $this->values('url'),
+                'icon' => $this->values('icon'),
+                'image' => $this->values('image'),
+                'copyright' => $this->values('copyright'),
+                'themecolor' => $this->values('themecolor'),
+                'twitter' => $this->values('twitter'),
+                'sameas' => $this->values('sameas')
+            ],compact(
+                'sociallinkArray',
+                'notesArray',
+                'notesCategoriesArray'
+            )
+        );
+    }
 
 
 
 
     
     protected function values($tag) {
-    $value = DB::table('seo')->select('value')->where('tag',$tag)->first();
-    return $value->value;
+        $value = DB::table('seo')->select('value')->where('tag',$tag)->first();
+        return $value->value;
     }
     protected function socialLinks() {
-    $list = DB::table('sociallinks')->get();
-    return $list;
+        $list = DB::table('sociallinks')->get();
+        return $list;
     }
     protected function skillLists($skill) {
-    $list = DB::table('skills')->where('group',$skill)->get();
-    return $list;
+        $list = DB::table('skills')->where('group',$skill)->get();
+        return $list;
     }
     protected function commentList() {
-    $list = DB::table('comments')->get();
-    return $list;
+        $list = DB::table('comments')->get();
+        return $list;
+    }
+    protected function notesList() {
+        $list = DB::table('notes')->get();
+        return $list;
+    }
+    protected function notesCategoriesList() {
+        $list = DB::table('notes_categories')->get();
+        return $list;
     }
     
 }
